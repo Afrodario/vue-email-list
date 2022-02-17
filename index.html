@@ -10,12 +10,11 @@
 
     <div id="root">
         <h1>LISTA INDIRIZZI E-MAIL</h1>
-        <ol>
-            <li v-for="(mail, index) in addresses"
-                v-if="addresses.length == 10">
+        <ul v-for="(mail, index) in addresses">
+            <li v-if="addresses.length == 10">
                 {{addresses[index].response}}
             </li>
-        </ol>
+        </ul>
     </div>
     
 
